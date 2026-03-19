@@ -1,0 +1,17 @@
+node_modules
+.DS_Store
+.env
+.env.local
+.turbo
+dist
+.output
+.nitro
+.tanstack
+.vite
+coverage
+playwright-report
+test-results
+convex/_generated
+apps/web/.tanstack
+apps/web/.vinxi
+tmp

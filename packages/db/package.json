@@ -1,0 +1,14 @@
+{
+  "name": "@matched-betting/db",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "bunx tsc -p tsconfig.json --noEmit"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

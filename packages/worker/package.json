@@ -1,0 +1,16 @@
+{
+  "name": "@matched-betting/worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "once": "bun run src/index.ts --once",
+    "test": "bun test",
+    "check": "bunx tsc -p tsconfig.json --noEmit",
+    "typecheck": "bunx tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.8.3"
+  }
+}

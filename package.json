@@ -1,0 +1,26 @@
+{
+  "name": "matched-betting",
+  "private": true,
+  "packageManager": "bun@1.3.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "bun --cwd apps/web dev",
+    "dev:worker": "bun --cwd packages/worker dev",
+    "build:web": "bun --cwd apps/web build",
+    "codegen:convex": "convex codegen --typecheck disable",
+    "typecheck:convex": "tsc -p convex/tsconfig.json --noEmit",
+    "typecheck:web": "bun --cwd apps/web typecheck",
+    "typecheck:domain": "bun --cwd packages/domain typecheck",
+    "typecheck:db": "bun --cwd packages/db typecheck",
+    "typecheck:worker": "bun --cwd packages/worker typecheck",
+    "typecheck": "bun run typecheck:web && bun run typecheck:convex && bun run typecheck:domain && bun run typecheck:db && bun run typecheck:worker"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "convex": "latest",
+    "typescript": "latest"
+  }
+}

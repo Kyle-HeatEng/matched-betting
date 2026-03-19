@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@matched-betting/domain": ["packages/domain/src/index.ts"],
+      "@matched-betting/domain/*": ["packages/domain/src/*"],
+      "@matched-betting/db": ["packages/db/src/index.ts"],
+      "@matched-betting/db/*": ["packages/db/src/*"],
+      "@matched-betting/worker/*": ["packages/worker/src/*"]
+    }
+  }
+}
